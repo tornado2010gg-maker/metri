@@ -12,7 +12,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-      - run: npm install
+      - run: npm install @capacitor/core@6 @capacitor/android@6 @capacitor/cli@6
       - run: npx cap add android
       - run: npx cap sync android
       - name: Build debug APK
